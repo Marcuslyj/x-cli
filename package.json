@@ -1,7 +1,35 @@
 {
   "name": "root",
   "private": true,
+  "description": "aha",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "dev": "lerna run dev",
+    "clean": ""
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@vant"
+    ],
+    "rules": {
+      "global-require": 0,
+      "import/no-dynamic-require": 0
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "typescript": "^3.7.5"
   }
 }
