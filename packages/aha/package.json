@@ -15,11 +15,14 @@
     "prepublishOnly": "tsc"
   },
   "dependencies": {
+    "@nuxt/friendly-errors-webpack-plugin": "^2.5.2",
     "@types/webpack": "^4.41.6",
     "commander": "^4.1.1",
     "typescript": "3.7.5",
     "webpack": "^4.41.6",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^5.8.0",
+    "webpackbar": "^5.0.2"
   },
   "directories": {
     "lib": "lib"
